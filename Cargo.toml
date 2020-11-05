@@ -1,0 +1,17 @@
+[package]
+authors = ["Austin Tindle <tindleaj@gmail.com>"]
+edition = "2018"
+name = "payments"
+version = "0.1.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1"
+csv = "1"
+fixed = {version = "1", features = ["serde", "serde-str", "std"]}
+serde = {version = "1", features = ["derive"]}
+
+[dev-dependencies]
+assert_cmd = "1"
+predicates = "1"
